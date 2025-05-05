@@ -17,4 +17,10 @@ else {
     return "scissors"
 }
 }
-getComputerChoice()
+getComputerChoice();
+
+function getUserChoice() {
+    let userChoice = prompt("Select either rock, paper, or scissors to play")
+    console.log(userChoice);
+}
+getUserChoice();
