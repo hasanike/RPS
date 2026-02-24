@@ -18,10 +18,12 @@ function getComputerChoice(){
         return "scissors";
     }
 }
-getComputerChoice();
-//Function to prompt for User's choice
+
+
+//Function to prompt for User's choice and change to lower case. 
 function getUserChoice() {
     let userChoice = prompt("Select either 'rock', 'paper', or 'scissors' to play");
+    userChoice = userChoice.toLowerCase();
     console.log(userChoice);
     return userChoice;
 }
@@ -31,10 +33,10 @@ function getWinner (computerChoice,userChoice){
     if (computerChoice === userChoice){
         console.log("Its a tie");
         return;
-    } else if 
+    } else if (       
         (computerChoice === "scissors" && userChoice === "paper") ||
         (computerChoice === "paper" && userChoice === "rock") ||
-        (computerChoice === "rock" && userChoice === "scissors") {
+        (computerChoice === "rock" && userChoice === "scissors")) {
         console.log("you Lose");
         return;
     } else {
