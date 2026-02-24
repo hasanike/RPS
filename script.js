@@ -29,7 +29,7 @@ function getUserChoice() {
 }
 // Compare User Choice to Computer Choice to get a winner
 
-function getWinner (computerChoice,userChoice){
+function getWinner(computerChoice,userChoice){
     if (computerChoice === userChoice){
         console.log("Its a tie");
         return;
